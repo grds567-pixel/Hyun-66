@@ -1,0 +1,266 @@
+HTML
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마음쉼표 심리상담센터 | 대인관계·우울·조울증 전문 상담</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#FFFDF9] text-[#554D47] antialiased">
+
+    <!-- 네비게이션 바 -->
+    <header class="sticky top-0 z-50 bg-[#FFFDF9]/90 backdrop-blur-md border-b border-[#F4EFE6]">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-semibold tracking-tight text-[#3A322C]">
+                🌅 마음쉼표 심리상담센터
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-[#7A7067]">
+                <a href="#about" class="hover:text-[#3A322C] transition">상담사 소개</a>
+                <a href="#programs" class="hover:text-[#3A322C] transition">상담 프로그램</a>
+                <a href="#inquiry" class="hover:text-[#3A322C] transition font-semibold text-[#D9826B]">빠른 문의</a>
+                <a href="#booking" class="hover:text-[#3A322C] transition">상담 예약</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="https://pf.kakao.com" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 bg-[#FEE500] hover:bg-[#FDD835] text-[#3C1E1E] px-4 py-2.5 rounded-full text-sm font-medium transition shadow-xs">
+                    💬 카카오 문의
+                </a>
+                <a href="#booking" class="bg-[#D9826B] hover:bg-[#C26F58] text-white px-5 py-2.5 rounded-full text-sm font-medium transition shadow-sm">
+                    상담 예약하기
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="relative py-24 md:py-32 overflow-hidden bg-gradient-to-b from-[#FFF5F0]/50 to-[#FFFDF9]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="inline-block bg-[#FCECE6] text-[#B85D44] text-xs md:text-sm font-medium px-4 py-1.5 rounded-full mb-6 shadow-xs">
+                100% 사전 예약제 · 철저한 프라이버시 보호
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-[#3A322C] leading-tight mb-6">
+                관계 속에서 지친 마음, 그리고<br class="hidden md:block"> 감정의 파도를 건너는 당신에게
+            </h1>
+            <p class="text-lg md:text-xl text-[#7A7067] max-w-2xl mx-auto mb-10 leading-relaxed">
+                듣고 끝나는 상담이 아니라, 스스로의 성향과 내면에서부터<br class="hidden md:block"> 근본적인 변화가 시작되는 따뜻한 공간입니다.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#booking" class="bg-[#D9826B] hover:bg-[#C26F58] text-white px-8 py-4 rounded-full text-base font-medium transition shadow-md">
+                    나를 위한 안전한 마음돌봄 예약하기
+                </a>
+                <a href="#inquiry" class="bg-white border border-[#E8DFD3] hover:bg-[#FAF6F0] text-[#635952] px-8 py-4 rounded-full text-base font-medium transition">
+                    먼저 편하게 문의하기 💬
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- [신규 추가] 고객들이 쉽게 말을 건넬 수 있는 '빠른 문의 배너' 섹션 -->
+    <section id="inquiry" class="py-16 bg-[#FFF5F0]/60 border-y border-[#F4EFE6]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="text-xs font-semibold tracking-wider text-[#D9826B] uppercase mb-2 block">FRIENDLY COUNSELING INQUIRY</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-[#3A322C] mb-4">
+                "예약하기 전에, 궁금한 점이 있으신가요?"
+            </h2>
+            <p class="text-sm md:text-base text-[#7A7067] max-w-2xl mx-auto mb-8 leading-relaxed">
+                상담 비용이나 진행 방식, 혹은 내 고민이 상담 대상이 되는지 망설여지신다면 부담 없이 편하게 문의해 주세요. 따뜻하게 답변해 드립니다.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- 카카오톡 채널 링크 연결 버튼 (실제 운영 시 본인의 카카오 채널 링크로 변경 가능) -->
+                <a href="https://pf.kakao.com" target="_blank" class="flex items-center gap-2 bg-[#FEE500] hover:bg-[#FDD835] text-[#3C1E1E] px-8 py-4 rounded-2xl font-bold text-sm transition shadow-sm">
+                    💬 카카오톡으로 1초만에 문의하기
+                </a>
+                <!-- 전화 문의 버튼 -->
+                <a href="tel:02-000-0000" class="flex items-center gap-2 bg-white hover:bg-[#FAF6F0] text-[#3A322C] border border-[#E8DFD3] px-8 py-4 rounded-2xl font-bold text-sm transition shadow-sm">
+                    📞 전화/문자 상담 문의하기
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 상담사 소개 및 이력 섹션 -->
+    <section id="about" class="py-20 bg-white border-b border-[#F4EFE6]">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-start">
+                <!-- 왼쪽: 프로필 사진 영역 -->
+                <div class="md:col-span-5">
+                    <div class="bg-[#FAF6F0] rounded-3xl h-96 flex items-center justify-center text-[#9E9388] font-medium shadow-inner sticky top-28 border border-[#F4EFE6]">
+                        [상담사 프로필 사진 영역]
+                    </div>
+                </div>
+
+                <!-- 오른쪽: 소개 및 이력 상세 -->
+                <div class="md:col-span-7 space-y-8">
+                    <div>
+                        <span class="text-xs font-semibold tracking-wider text-[#D9826B] uppercase mb-2 block">ABOUT COUNSELOR</span>
+                        <h2 class="text-2xl md:text-3xl font-bold text-[#3A322C] mb-4">
+                            내면의 깊은 이해로부터 시작되는<br>진짜 변화를 만듭니다.
+                        </h2>
+                        <p class="text-[#7A7067] leading-relaxed font-medium text-base">
+                            내담자의 성향과 성격 등 보이지 않는 내면을 이해하고 변화하는 상담을 지향합니다. 단순히 위로만 건네고 끝나는 상담이 아니라, 스스로의 성향과 내면에서부터 단단한 변화가 일어날 수 있도록 따뜻하게 동행합니다.
+                        </p>
+                    </div>
+
+                    <!-- 핵심 이력 카드 -->
+                    <div class="bg-[#FFFDF9] p-6 rounded-3xl border border-[#F4EFE6] space-y-4 shadow-xs">
+                        <h3 class="text-sm font-bold text-[#3A322C] uppercase tracking-wide">⭐️ 주요 약력 및 활동</h3>
+                        <div class="grid sm:grid-cols-2 gap-4 text-xs text-[#7A7067]">
+                            <div>
+                                <p class="font-semibold text-[#3A322C] mb-1">[ 전력 및 선수 경력 ]</p>
+                                <ul class="space-y-1.5">
+                                    <li>• 전) 대한육상연맹(KAAF) 단거리 육상선수 (10년 이상 엘리트 선수)</li>
+                                    <li>• 전) 국가대표 선수촌(KSOC) 초빙 상담교사</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-[#3A322C] mb-1">[ 현재 활동 ]</p>
+                                <ul class="space-y-1.5">
+                                    <li>• 현) 'D'사 디지털 헬스케어 스타트업 자문위원</li>
+                                    <li>• 현) 'H사' 엘리트 선수단 심리 상담사</li>
+                                    <li>• 현) 'M'사 심리케어센터 전문 상담사</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-2 border-t border-[#F4EFE6] text-xs text-[#8C8279]">
+                            * 교육업계, 기업 임직원 및 학생들을 대상으로 '내면의 가치' 교육 다수 진행
+                        </div>
+                    </div>
+
+                    <!-- 비밀 보장 안심 박스 -->
+                    <div class="border-l-4 border-[#D9826B] pl-4 py-3 bg-[#FFF5F0]/60 rounded-r-2xl">
+                        <p class="text-sm font-semibold text-[#3A322C]">🔒 철저한 비밀 보장 안심 안내</p>
+                        <p class="text-xs text-[#7A7067] mt-1">이곳에 나누어 주시는 모든 이야기는 철저하게 비밀이 보장되며, 상담 기록은 외부에 절대 유출되지 않는 가장 안전한 공간입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 상담 프로그램 안내 -->
+    <section id="programs" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-[#3A322C] mb-4">함께 다루어가는 마음의 이야기</h2>
+            <p class="text-[#7A7067]">스포츠 트레이닝과 심리학 프로세스를 접목하여 깊이 있고 체계적인 치유를 진행합니다.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- 프로그램 1 -->
+            <div class="bg-white p-8 rounded-3xl border border-[#F4EFE6] shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-[#FFF5F0] text-[#D9826B] rounded-2xl flex items-center justify-center font-bold mb-6">01</div>
+                <h3 class="text-xl font-bold text-[#3A322C] mb-3">대인관계 및 관계 회복</h3>
+                <p class="text-sm text-[#7A7067] leading-relaxed">
+                    반복되는 갈등, 타인과의 관계에서 느끼는 피로감과 상처를 치유하고 건강한 경계 설정을 돕습니다.
+                </p>
+            </div>
+            <!-- 프로그램 2 -->
+            <div class="bg-white p-8 rounded-3xl border border-[#F4EFE6] shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-[#FFF5F0] text-[#D9826B] rounded-2xl flex items-center justify-center font-bold mb-6">02</div>
+                <h3 class="text-xl font-bold text-[#3A322C] mb-3">우울증 및 번아웃</h3>
+                <p class="text-sm text-[#7A7067] leading-relaxed">
+                    무기력함, 삶의 의미 상실, 마음의 에너지가 완전히 바닥났을 때 다시 일어설 힘을 함께 찾습니다.
+                </p>
+            </div>
+            <!-- 프로그램 3 -->
+            <div class="bg-white p-8 rounded-3xl border border-[#F4EFE6] shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-[#FFF5F0] text-[#D9826B] rounded-2xl flex items-center justify-center font-bold mb-6">03</div>
+                <h3 class="text-xl font-bold text-[#3A322C] mb-3">조울증(양극성) 감정 조절</h3>
+                <p class="text-sm text-[#7A7067] leading-relaxed">
+                    극심한 감정의 기복을 깊이 이해하고, 일상 속에서 감정을 안정적으로 조율하는 법을 연습합니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 비밀보장 안내 섹션 -->
+    <section id="safety" class="bg-[#FAF6F0] py-16 border-y border-[#F4EFE6]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-xl font-bold text-[#3A322C] mb-3">포근하고 안전한 공간을 약속드립니다</h3>
+            <p class="text-sm text-[#7A7067] leading-relaxed max-w-2xl mx-auto">
+                상담실 문을 닫는 순간부터, 오직 내담자님과 저만의 온전한 시간이 시작됩니다. 비밀 보장은 상담 윤리의 가장 근본이자 철칙입니다. 안심하고 마음을 열어주세요.
+            </p>
+        </div>
+    </section>
+
+    <!-- 실시간 상담 예약 신청 폼 섹션 -->
+    <section id="booking" class="py-24 max-w-3xl mx-auto px-6">
+        <div class="bg-white p-8 md:p-12 rounded-3xl border border-[#F4EFE6] shadow-sm">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#3A322C] mb-2">상담 예약 신청</h2>
+                <p class="text-sm text-[#7A7067]">정보를 남겨주시면 확인 후 따뜻한 마음으로 연락을 드려 일정을 확정해 드립니다.</p>
+            </div>
+
+            <form onsubmit="handleBooking(event)" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold text-[#635952] mb-2">성함 (가명 가능)</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-2xl border border-[#E8DFD3] focus:outline-none focus:border-[#D9826B] bg-[#FFFDF9] text-sm" placeholder="이름을 입력해주세요">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-[#635952] mb-2">연락처</label>
+                        <input type="tel" required class="w-full px-4 py-3 rounded-2xl border border-[#E8DFD3] focus:outline-none focus:border-[#D9826B] bg-[#FFFDF9] text-sm" placeholder="010-0000-0000">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold text-[#635952] mb-2">희망 상담 분야</label>
+                        <select class="w-full px-4 py-3 rounded-2xl border border-[#E8DFD3] focus:outline-none focus:border-[#D9826B] bg-[#FFFDF9] text-sm">
+                            <option>대인관계 및 관계 회복</option>
+                            <option>우울증 및 번아웃</option>
+                            <option>조울증(양극성장애) 감정 조절</option>
+                            <option>기타 마음돌봄</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-[#635952] mb-2">희망 날짜 및 시간</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-2xl border border-[#E8DFD3] focus:outline-none focus:border-[#D9826B] bg-[#FFFDF9] text-sm" placeholder="예: 평일 오후 또는 수요일 오전 선호">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-[#635952] mb-2">편하게 나누고 싶은 간단한 이야기 (선택)</label>
+                    <textarea rows="4" class="w-full px-4 py-3 rounded-2xl border border-[#E8DFD3] focus:outline-none focus:border-[#D9826B] bg-[#FFFDF9] text-sm" placeholder="현재 마음의 상태나 특별히 이야기 나누고 싶은 주제를 적어주세요."></textarea>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full bg-[#D9826B] hover:bg-[#C26F58] text-white py-4 rounded-2xl font-medium transition shadow-md">
+                        비밀 보장 신청하기
+                    </button>
+                    <p class="text-center text-xs text-[#9E9388] mt-3">🔒 입력하신 정보는 상담 예약 목적 외에는 절대 사용되지 않습니다.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 푸터 및 오시는 길 -->
+    <footer id="location" class="bg-[#3A322C] text-[#E8DFD3] py-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">🌅 마음쉼표 심리상담센터</h3>
+                <p class="text-sm leading-relaxed mb-4 text-[#B8ADA1]">
+                    주소: 서울특별시 강남구 마음로 123, 3층<br>
+                    운영 시간: 월요일 - 토요일 (10:00 - 20:00) / 일요일 휴무<br>
+                    전화번호: 02-000-0000
+                </p>
+                <p class="text-xs text-[#8C8279]">100% 사전 예약제로 운영되어, 방문 전 예약을 꼭 부탁드립니다.</p>
+            </div>
+            <div class="flex flex-col md:items-end justify-center">
+                <p class="text-xs text-[#8C8279]">© 2026 마음쉼표 심리상담센터. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 예약 완료 안내 스크립트 -->
+    <script>
+        function handleBooking(event) {
+            event.preventDefault();
+            alert("상담 예약 신청이 안전하게 접수되었습니다. 확인 후 기재해주신 연락처로 따뜻한 안내 연락드리겠습니다.");
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
